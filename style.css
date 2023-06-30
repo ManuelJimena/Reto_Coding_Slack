@@ -16,6 +16,10 @@
   }
 
   /* GLOBAL STYLES */
+  @font-face {
+    font-family: "Helvetica Neue";
+    src: url("./assets/fonts/1438-font.ttf") format('truetype');
+  }
   body {
     background-color: var(--primary);
     color: var(--tertiary);
