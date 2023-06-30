@@ -1,0 +1,49 @@
+:root {
+  --primary: #F4EDE4;
+  --secondary: #541554;
+  --tertiary: #FFFFFF;
+  --quaternary: #000000;
+  --heading-size: 25px;
+  font-family: "Helvetica Neue", Helvetica, sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  header {
+    background-color: var(--secondary);
+    height: 10vh;
+  }
+  
+  main {
+    background-color: var(--primary);
+    min-height: 80vh;
+  }
+  
+  footer {
+    background-color: tomato;
+    height: 10vh;
+  }
+  
+  h1 {
+    text-align: center;
+    padding-top: 16px;
+    color: var(--tertiary);
+    font-size: var(--heading-size);
+  }
+  
+  p {
+    text-align: center;
+    padding-top: 32px;
+    color: var(--tertiary);
+  }
+  
+  body {
+    background-color: var(--primary);
+    color: var(--tertiary);
+  }
+
+  
