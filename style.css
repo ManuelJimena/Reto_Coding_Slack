@@ -15,7 +15,14 @@
   
   header {
     background-color: var(--secondary);
-    height: 10vh;
+    height: 490px;
+    border: 2px solid orange;
+  }
+
+ nav {
+    background-color: var(--secondary);
+    height: 85px;
+    border: 2px solid red;
   }
   
   main {
