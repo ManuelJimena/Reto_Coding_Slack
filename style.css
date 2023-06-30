@@ -16,10 +16,6 @@
   }
 
   /* GLOBAL STYLES */
-  @font-face {
-    font-family: "Helvetica Neue";
-    src: url("./assets/fonts/1438-font.ttf") format('truetype');
-  }
   body {
     background-color: var(--primary);
     color: var(--tertiary);
@@ -44,7 +40,7 @@
   nav > ul > li > img {
     width: 150px; 
     padding: 25px;
-    margin-left: 25px;
+    margin-left: 135px;
   }
 
   nav > ul {
@@ -98,60 +94,52 @@ button.team {
   }
 
   /* HEADER */
-header {
+  header {
     background-color: var(--secondary);
     height: 490px;
     border: 2px solid orange;
-    width: 50%;
-    max-width: 50%;
-    float: left;
+    display: flex;
   }
+  
+  .header-content {
+    display: flex;
+    justify-content: center;
+    margin-top: 15px;
 
-  div.headerDiv {
-    background-color: var(--secondary);
-    height: 490px;
-    border: 2px solid rgb(0, 255, 85);
-    width: 50%;
-    max-width: 50%;
-    float: right;
   }
-
-  #heroProduct {
-    width: 750px;
-    height: auto;
-    margin-top: 10px;
+  
+  .header-text {
+    flex: 1;
+    text-align: left;
+    color: var(--tertiary);
+    margin-left: 340px;
+    margin-right: 5px;
   }
+  
+  .header-video {
+    flex: 1;
+    text-align: right;
+  }
+  
+  .header-video video {
+    width: 850px;
+    height: 400px;
+    margin-right: 95px;
+ }  
 
   h1 {
-    text-align: end;
-    padding-top: 16px;
-    color: var(--tertiary);
-    font-size: 45px;
-    width: 750px;
-    height: auto;
-    margin-top: 10px;
-    margin-left: 58px;
+    font-size: 43px;
+    margin-right: 37px;
   }
 
   h2 {
-    text-align: end;
-    padding-top: 16px;
     color: rgb(236,177,46);
-    font-size: 45px;
-    width: 750px;
-    height: auto;
-    margin-top: -19px;
-    margin-left: 98px;
+    font-size: 43px;
   }
 
   h3, h4 {
-    text-align: center;
-    padding-top: 16px;
-    color: var(--tertiary);
     font-size: 17px;
-    width: 750px;
-    height: auto;
-    margin-top: 12px;
+    margin-top: 8px;
   }
 
 
