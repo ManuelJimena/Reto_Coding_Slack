@@ -112,8 +112,7 @@ button.team {
     flex: 1;
     text-align: left;
     color: var(--tertiary);
-    margin-left: 340px;
-    margin-right: 5px;
+    margin: 15px 5px 0px 340px;
   }
   
   .header-video {
@@ -124,7 +123,8 @@ button.team {
   .header-video video {
     width: 850px;
     height: 400px;
-    margin-right: 95px;
+    margin-right: 97px;
+    margin-top: 15px;
  }  
 
   h1 {
@@ -137,11 +137,46 @@ button.team {
     font-size: 43px;
   }
 
-  h3, h4 {
+  h3 {
     font-size: 17px;
     margin-top: 8px;
   }
+  h4 {
+    font-size: 17px;
+    margin-top: 8px;
+    margin-left: 340px;
+  }
 
+  .header-button {
+    display: flex;
+  flex-direction: column;
+justify-content: center;
+border: 1px solid var(--tertiary);
+height: 120px;
+width: 600px;
+margin: 15px 0 15px 340px;
+gap: 8px;
+  }
+
+  button.regMail,
+  .regGoogle {
+width: 108%;
+height: 55px;
+border-radius: 5px;
+padding-left: 9px;
+  }
+
+  button.regGoogle {
+ 
+  }
+  
+  button.regMail:hover {
+
+
+  }
+  button.regGoogle:hover {
+
+  }
 
   /* MAIN */
   main {
