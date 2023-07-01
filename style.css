@@ -1,8 +1,8 @@
 /* PALETTE */
 :root {
-  --primary: #F4EDE4;
+  --primary: #f4ede4;
   --secondary: #541554;
-  --tertiary: #FFFFFF;
+  --tertiary: #ffffff;
   --quaternary: #000000;
   --heading-size: 25px;
   font-family: "Helvetica Neue", Helvetica, sans-serif;
@@ -10,188 +10,207 @@
 
 /* RESET */
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
-  /* GLOBAL STYLES */
-  body {
-    background-color: var(--primary);
-    color: var(--tertiary);
-  }
+/* GLOBAL STYLES */
+body {
+  background-color: var(--primary);
+  color: var(--tertiary);
+}
 
-  li {
-    list-style-type: none;
-  }
-  
-  a {
-    text-decoration: none;
-    color: var(--tertiary);
-  }
+li {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+  color: var(--tertiary);
+}
 
 /* NAVBAR */
- nav {
-    background-color: var(--secondary);
-    height: 85px;
-    border: 2px solid red;
-  }
-  
-  nav > ul > li > img {
-    width: 150px; 
-    padding: 25px;
-    margin-left: 135px;
-  }
+nav {
+  background-color: var(--secondary);
+  border: 2px solid red;
+}
 
-  nav > ul {
-    height: 80px;
-    width: auto;
-    display: flex;
-    align-items: center;
-    padding: 0 10px;
-    margin-left: 165px;
-    font-size: 14px;
-    font-weight: bold;
-    gap: 20px
-  }
+nav > ul > li > img {
+  width: 100%;
+  max-width: 150px;
+  padding: 25px;
+  display: block;
+}
 
-  nav .arrow::after {
-    content: "\02C5";
-    font-size: 12px;
-    margin-left: 5px;
-  } 
+nav > ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+gap: 20px;
+  font-size: 14px;
+  font-weight: bold;
+  flex-wrap: wrap;
+}
 
-  nav .connect {
-    margin-left: 130px;
-    
-  }
+nav .arrow::after {
+  content: "\02C5";
+  font-size: 12px;
+  margin-left: 5px;
+}
+
+.nav-content {
+ margin-left: 100px;
+}
 
 button.team {
-    border: 1px solid var(--tertiary);
-    color: var(--tertiary);
-    padding: 12px 12px;
-    background-color: transparent;
-    text-transform: uppercase;
-    font-weight: 600;
-    font-size: 15px;
-    transition: border-width 0.3s ease-in-out;
-    border-radius: 4px;
-    margin-left: 25px;
-  }
+  border: 1px solid var(--tertiary);
+  color: var(--tertiary);
+  padding: 12px 12px;
+  background-color: transparent;
+  text-transform: uppercase;
+  font-weight: 600;
+  font-size: 15px;
+  transition: border-width 0.3s ease-in-out;
+  border-radius: 4px;
+  flex-wrap: wrap;
+}
 
-  button.free {
-    background-color: white;
-    color: var(--secondary);
-    margin-left: 5px;
-  }
-  
-  button.team:hover {
-    border: 2px solid var(--tertiary);
+button.free {
+  background-color: white;
+  color: var(--secondary);
+}
 
-  }
-  button.free:hover {
-    border: 0px
-  }
+button.team:hover {
+  border: 2px solid var(--tertiary);
+}
 
-  /* HEADER */
-  header {
-    background-color: var(--secondary);
-    height: 490px;
-    border: 2px solid orange;
-    display: flex;
-  }
-  
+button.free:hover {
+  border: 0;
+}
+
+/* HEADER */
+header {
+  background-color: var(--secondary);
+  border: 2px solid orange;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.header-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 20px;
+  text-align: left;
+  flex: 1;
+  flex-wrap: wrap;
+}
+
+.header-text {
+  color: var(--tertiary);
+  flex: 1; 
+  margin-right: 20px; 
+}
+
+.header-video {
+  flex: 1;
+  margin-top: 20px;
+  margin-bottom: 25px;
+  text-align: center;
+}
+
+.header-video video {
+  max-width: 100%;
+}
+
+h1, h2 {
+  font-size: 43px;
+  margin-bottom: 10px;
+}
+
+h2 {
+  color: rgb(236, 177, 46);
+}
+
+h3, h4 {
+  font-size: 17px;
+  margin-bottom: 10px;
+}
+
+/* SMARTPHONE */
+@media screen and (max-width: 768px) {
   .header-content {
     display: flex;
-    justify-content: center;
-    margin-top: 15px;
+    flex-direction: column;
+  }
 
-  }
-  
-  .header-text {
-    flex: 1;
-    text-align: left;
-    color: var(--tertiary);
-    margin: 15px 5px 0px 340px;
-  }
-  
   .header-video {
-    flex: 1;
-    text-align: right;
+    order: 2;
+    margin-top: 20px;
   }
-  
-  .header-video video {
-    width: 850px;
-    height: 400px;
-    margin-right: 97px;
-    margin-top: 15px;
- }  
+}
 
-  h1 {
-    font-size: 43px;
-    margin-right: 37px;
-  }
+button.regMail,
+.regGoogle {
+  width: 100%;
+  height: 55px;
+  border-radius: 5px;
+  text-transform: uppercase;
+  font-weight: 600;
 
-  h2 {
-    color: rgb(236,177,46);
-    font-size: 43px;
-  }
+}
 
-  h3 {
-    font-size: 17px;
-    margin-top: 8px;
-  }
-  h4 {
-    font-size: 17px;
-    margin-top: 8px;
-    margin-left: 340px;
-  }
+button.regGoogle {
+background-color: #4285F4;
+color: white;
+position: relative;
+overflow: hidden;
 
-  .header-button {
-    display: flex;
-  flex-direction: column;
-justify-content: center;
-border: 1px solid var(--tertiary);
-height: 120px;
-width: 600px;
-margin: 15px 0 15px 340px;
-gap: 8px;
-  }
+}
 
-  button.regMail,
-  .regGoogle {
-width: 108%;
-height: 55px;
-border-radius: 5px;
-padding-left: 9px;
-  }
+button.regGoogle::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url(./assets/icons/google.png);
+  background-repeat: no-repeat;
+  background-position: left center;
+  background-size: contain;
 
-  button.regGoogle {
- 
-  }
-  
-  button.regMail:hover {
+}
 
+button.regGoogle:active,
+button.regGoogle:focus {
+  background-color: var(--tertiary);
+  color: #4285F4;
+  transition: background-color 0.3s, color 0.3s;
+}
 
-  }
-  button.regGoogle:hover {
+button.regMail:active,
+button.regMail:focus {
+  background-color: var(--secondary);
+  color: var(--tertiary);
+  transition: background-color 0.3s, color 0.3s;
+}
 
-  }
+/* MAIN */
+main {
+  background-color: var(--primary);
+  min-height: 80vh;
+}
 
-  /* MAIN */
-  main {
-    background-color: var(--primary);
-    min-height: 80vh;
-  }
-  
-   /* FOOTER */
-  footer {
-    background-color: tomato;
-    height: 10vh;
-  }
-  
-  p {
-    text-align: center;
-    padding-top: 32px;
-    color: var(--tertiary);
-  }
+/* FOOTER */
+footer {
+  background-color: tomato;
+  height: 10vh;
+}
+
+p {
+  text-align: center;
+  padding-top: 32px;
+  color: var(--tertiary);
+}
