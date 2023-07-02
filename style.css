@@ -220,7 +220,31 @@ p.section-title {
 /* MAIN */
 main {
   background-color: var(--primary);
-  min-height: 80vh;
+  border: 2px solid orange;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.main-first-text {
+  color: var(--quaternary);
+  flex: 1; 
+  margin-right: 20px; 
+  max-width: 30%;
+}
+
+.main-first-video {
+  flex: 1;
+  margin-top: 20px;
+  margin-bottom: 25px;
+  text-align: center;
+}
+
+.main-first-video video {
+  max-width: 30%;
+}
+
+.main-first-text h2 {
+  color: red;
 }
 
 /* FOOTER */
