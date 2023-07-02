@@ -225,22 +225,33 @@ main {
   flex-wrap: wrap;
 }
 
+.main-first {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 20px;
+  text-align: left;
+  flex: 1;
+  flex-wrap: wrap;
+}
+
 .main-first-text {
   color: var(--quaternary);
   flex: 1; 
   margin-right: 20px; 
   max-width: 30%;
+
 }
 
 .main-first-video {
   flex: 1;
   margin-top: 20px;
   margin-bottom: 25px;
-  text-align: center;
+
 }
 
 .main-first-video video {
-  max-width: 30%;
+  max-width: 70%;
 }
 
 .main-first-text h2 {
