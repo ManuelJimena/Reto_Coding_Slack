@@ -227,7 +227,7 @@ main {
 
 .main-first {
   display: grid;
-  grid-template-columns: 50% 50% 50%;
+  grid-template-columns: 200px 1fr 200px;
   grid-template-rows: 50% 50% 50%;
   grid-gap: 20px;
 }
@@ -238,7 +238,7 @@ main {
 }
 
 .main-first-video video {
-  max-width: 600PX;
+  max-width: 600px;
 }
 
 .main-first-text {
