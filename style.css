@@ -221,116 +221,68 @@ p.section-title {
 /* MAIN */
 main {
   background-color: var(--primary);
+  display: grid;
   border: 2px solid orange;
-  display: flex;
-  flex-wrap: wrap;
 }
 
 .main-first {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 0 20px;
-  text-align: left;
-  flex: 1;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: 50% 50% 50%;
+  grid-template-rows: 50% 50% 50%;
+  grid-gap: 20px;
+}
+
+.main-first-video {
+  grid-column: 1;
+  grid-row: 1;
+}
+
+.main-first-video video {
+  max-width: 600PX;
 }
 
 .main-first-text {
   color: var(--quaternary);
-  flex: 1; 
-  margin-right: 10%;
-  margin-left: 2%; 
-  max-width: 450px;
-  min-width: 20%;
-}
-
-.main-first-video {
-  flex: 1;
-  margin-top: 20px;
-  margin-left: 10%; 
-  margin-bottom: 25px;
-  
-}
-
-.main-first-video video {
-  max-width: 550px;
-}
-
-.main-first-text h2 {
-  color: var(--quaternary);
-  font-size: 30px;
-}
-
-a.main-first-link {
-  color: rgb(19,99,170);
+  grid-column: 2;
+  grid-row: 1;
 }
 
 .main-second-text {
   color: var(--quaternary);
-  flex: 1; 
-  margin-right: 10%;
-  margin-left: 2%; 
-  max-width: 450px;
-  min-width: 20%;
+  grid-column: 1;
+  grid-row: 2;
 }
 
-.main-second-video {
-  flex: 1;
-  margin-top: 20px;
-  margin-left: 10%; 
-  margin-bottom: 25px;
-}
-
-.main-second-video video {
-  max-width: 550px;
-}
-
-.main-second-text h2 {
+.main-first-text h2, .main-second-text h2, .main-third-text h2 {
   color: var(--quaternary);
   font-size: 30px;
 }
 
-a.main-second-link {
-  color: rgb(19,99,170);
+.main-second-video {
+  grid-column: 2;
+  grid-row: 2;
 }
 
-.main-third {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 0 20px;
-  text-align: left;
-  flex: 1;
-  flex-wrap: wrap;
+.main-second-video video {
+  max-width: 600PX;
+}
+
+.main-third-video {
+  grid-column: 1;
+  grid-row: 3;
+}
+
+.main-third-video video {
+  max-width: 600PX;
 }
 
 .main-third-text {
   color: var(--quaternary);
-  flex: 1; 
-  margin-right: 10%;
-  margin-left: 2%; 
-  max-width: 450px;
-  min-width: 20%;
+  grid-column: 2;
+  grid-row: 3;
 }
 
-.main-third-video {
-  flex: 1;
-  margin-top: 20px;
-  margin-left: 10%; 
-  margin-bottom: 25px;
-}
-
-.main-third-video video {
-  max-width: 550px;
-}
-
-.main-third-text h2 {
-  color: var(--quaternary);
-  font-size: 30px;
-}
-
-a.main-third-link {
+a.main-first-link, a.main-third-link, a.main-second-link {
   color: rgb(19,99,170);
 }
 
