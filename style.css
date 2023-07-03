@@ -228,7 +228,6 @@ p.section-title {
 
 /* MAIN */
 main {
-  border: 2px solid orange;
   align-items: center;
   justify-content: space-between;
   padding: 0 20px;
@@ -258,7 +257,6 @@ main {
 }
 
 section.section-second-text {
-  border: 2px solid orange;
   align-items: center;
   justify-content: space-between;
   padding: 0 20px;
@@ -291,7 +289,6 @@ section.section-second-text {
 }
 
 div.div-third-video {
-  border: 2px solid orange;
   align-items: center;
   justify-content: space-between;
   padding: 0 20px;
@@ -397,7 +394,6 @@ h5 {
 /* FIGURE */
 figure {
   background-color: var(--tertiary);
-  border: 2px solid orange;
   align-items: center;
   justify-content: space-between;
   padding: 0 20px;
@@ -442,7 +438,6 @@ figure > div > h4 {
 
 div.figure-foot p {
   background-color: var(--tertiary);
-  border: 2px solid orange;
   color: rgb(105,105,129);
   font-size: 10px;
   font-weight: 10;
@@ -471,10 +466,15 @@ ul.div-new-list {
   display: flex;
   justify-content: center;
   margin-top: 3%;
-  margin-bottom: 3%;
+  margin-bottom: 4%;
   text-align: center;
   flex: 1;
   flex-wrap: wrap;
+  gap: 2%;
+ }
+
+ .div-new-list li > a > img{
+height: 425px;
  }
 
 /* FOOTER */
