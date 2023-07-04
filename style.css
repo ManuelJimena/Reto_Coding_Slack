@@ -451,7 +451,6 @@ div.figure-foot p {
 
 div.div-new-work h2 {
  background-color: var(--primary);
- border: 2px solid orange;
  color: var(--quaternary);
  font-size: 32px;
  font-weight: 700;
@@ -465,7 +464,6 @@ div.div-new-work h2 {
 
 ul.div-new-list {
   background-color: var(--primary);
-  border: 2px solid orange;
   color: var(--quaternary);
   font-size: 32px;
   font-weight: 700;
@@ -486,6 +484,8 @@ height: 425px;
 div.figure-publicity {
   border: 2px solid black;
   background-image: url(./assets/images/sphere-mj.png);
+  background-size: cover;
+  background-position: center;
   display: flex;
   justify-content: center;
   padding: 0 20px;
@@ -497,7 +497,6 @@ div.figure-publicity {
 }
 
 button.figure {
-  
   border: 1px solid var(--tertiary);
   color: var(--tertiary);
   padding: 12px 12px;
@@ -535,12 +534,54 @@ div.figure-publicity h2 {
 
 /* FOOTER */
 footer {
-  background-color: tomato;
-  height: 10vh;
+  border: 1px solid #541554;
+  color: var(--tertiary)
+}
+
+div.footer-list {
+  background-color: var(--tertiary);
+  align-items: flex-start;
+  justify-content: center;
+  padding: 0 20px;
+  flex: 1;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 60px;
+}
+
+div.footer-list ul h2 {
+  color: var(--quaternary);
+  font-size: 14px;
+  text-transform: uppercase;
+}
+
+div.footer-list ul li{
+  margin-top: 8%;
+}
+
+div.footer-list ul li a {
+  color: rgb(84,81,84);
+  font-size: 14px; 
+}
+
+div.footer-list ul li a:hover {
+  color: rgb(92, 156, 253)
+}
+
+div.footer-list img {
+width: 4%;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+hr {
+  margin-left: 50px;
+  margin-right:50px;
 }
 
 p {
+  background-color: var(--tertiary);
   text-align: center;
   padding-top: 32px;
-  color: var(--tertiary);
+  color: var(--quaternary);
 }
