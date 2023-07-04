@@ -479,9 +479,59 @@ ul.div-new-list {
   gap: 2%;
  }
 
- .div-new-list li > a > img{
+.div-new-list li > a > img{
 height: 425px;
  }
+
+div.figure-publicity {
+  border: 2px solid black;
+  background-image: url(./assets/images/sphere-mj.png);
+  display: flex;
+  justify-content: center;
+  padding: 0 20px;
+  text-align: center;
+  flex: 1;
+  flex-wrap: wrap;
+  gap: 5px;
+
+}
+
+button.figure {
+  
+  border: 1px solid var(--tertiary);
+  color: var(--tertiary);
+  padding: 12px 12px;
+  background-color: var(--secondary);
+  text-transform: uppercase;
+  font-weight: 600;
+  font-size: 15px;
+  transition: border-width 0.3s ease-in-out;
+  margin-bottom: 42%;
+  border-radius: 4px;
+  flex-wrap: wrap;
+}
+
+button.free {
+  background-color: white;
+  color: var(--secondary);
+}
+
+button.free:hover {
+  border: 2px solid var(--secondary)
+}
+
+button.free:active,
+button.free:focus {
+  background-color: var(--secondary);
+  color: var(--tertiary);
+}
+
+div.figure-publicity h2 {
+  width: 100%;
+  color: var(--tertiary);
+  margin: 7% 10% 3% 10%;
+  font-size: 35px;
+}
 
 /* FOOTER */
 footer {
