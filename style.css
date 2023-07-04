@@ -220,7 +220,11 @@ ul.section-ul {
 }
 
 p.section-title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   text-transform: uppercase;
+  margin-top: 3%;
   font-size: 14px;
   font-weight: 700;
   color: var(--quaternary);
@@ -568,10 +572,77 @@ div.footer-list ul li a:hover {
   color: rgb(92, 156, 253)
 }
 
+.footer-end {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  color: var(--tertiary);
+  background-color: var(--tertiary);
+}
+
+.end-page-text,
+.end-page-images {
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+
+}
+
+.end-page-text li,
+.end-page-images li {
+  margin-right: 10px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.end-page-text li a {
+  color: var(--quaternary);
+
+}
+
+.end-page-images img {
+  width: 20px;
+  height: auto;
+  color: rgb(18,99,163);
+
+}
+
+.end-page-images li a img:hover {
+  color: rgb(18,99,163);
+
+}
+
+.end-page-text li a:hover {
+  color: rgb(18,99,163);
+
+}
+
+.end-page-images a {
+  color: rgb(18,99,163)
+}
+
+.footer-end p {
+  color: rgb(84,81,84);
+  font-size: 12px; 
+  text-align: center;
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.footer-end p a {
+  color: rgb(84,81,84);
+}
+
 div.footer-list img {
 width: 4%;
   display: flex;
   flex-wrap: wrap;
+}
+
+ul .region::after {
+  content: "\02C5";
+  font-size: 12px;
+  margin-left: 5px;
 }
 
 hr {
@@ -579,9 +650,3 @@ hr {
   margin-right: 50px;
 }
 
-p {
-  background-color: var(--tertiary);
-  text-align: center;
-  padding-top: 32px;
-  color: var(--quaternary);
-}
