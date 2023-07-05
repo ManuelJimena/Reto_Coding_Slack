@@ -100,9 +100,16 @@ button.team {
   flex-wrap: wrap;
 }
 
-button.free {
+button.olp {
   background-color: white;
   color: var(--secondary);
+}
+
+button.olp:active,
+button.olp:focus {
+  background-color: var(--secondary);
+  color: var(--tertiary);
+  border: 2px solid var(--tertiary);
 }
 
 button.team:hover {
@@ -110,7 +117,7 @@ button.team:hover {
 }
 
 button.free:hover {
-  border: 0;
+  border: 2px solid var(--tertiary)
 }
 
 /* HEADER */
@@ -351,7 +358,7 @@ button.aside {
 }
 
 button.sales {
-  background-color: white;
+  background-color: var(--tertiary);
   color: var(--secondary);
 }
 
@@ -523,6 +530,10 @@ button.free {
   color: var(--secondary);
 }
 
+button.sales:hover {
+  border: 2px solid var(--tertiary)
+}
+
 button.free:hover {
   border: 2px solid var(--secondary)
 }
@@ -593,6 +604,8 @@ div.footer-list ul li a:hover {
   flex-wrap: wrap;
   margin-right: 7%;
   margin-left: 7%;
+  font-weight: bold;
+  font-size: 14px;
 }
 
 .end-page-text li,
@@ -614,8 +627,8 @@ div.footer-list ul li a:hover {
 }
 
 .end-page-images li a img:hover {
-  width: 40px;
-  background-color: rgb(18,99,163);
+  width: 20px;
+ transform: rgb(18,99,163);
 
 }
 
@@ -644,7 +657,7 @@ div.footer-list img {
   flex-wrap: wrap;
 }
 
-ul .region::after {
+ul .region-arrow::after {
   content: "\02C5";
   font-size: 12px;
   margin-left: 5px;
@@ -655,3 +668,8 @@ hr {
   margin-right: 50px;
 }
 
+.privacy, .region {
+  height: 20px;
+  width: 20px;
+  margin-top: 2%;
+}
