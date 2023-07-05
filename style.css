@@ -95,7 +95,7 @@ button.team {
   text-transform: uppercase;
   font-weight: 600;
   font-size: 15px;
-  transition: border-width 0.3s ease-in-out;
+  transition: all .5s ease-in-out;
   border-radius: 4px;
   flex-wrap: wrap;
 }
@@ -196,14 +196,14 @@ button.regGoogle:active,
 button.regGoogle:focus {
   background-color: var(--tertiary);
   color: #4285F4;
-  transition: background-color 0.3s, color 0.3s;
+  transition: all .5s ease-in-out;
 }
 
 button.regMail:active,
 button.regMail:focus {
   background-color: var(--secondary);
   color: var(--tertiary);
-  transition: background-color 0.3s, color 0.3s;
+  transition: all .5s ease-in-out;
 }
 
 /* SECTION */
@@ -345,7 +345,7 @@ button.aside {
   text-transform: uppercase;
   font-weight: 600;
   font-size: 15px;
-  transition: border-width 0.3s ease-in-out;
+  transition: all .5s ease-in-out;
   border-radius: 4px;
   flex-wrap: wrap;
 }
@@ -485,8 +485,13 @@ ul.div-new-list {
 height: 425px;
  }
 
+ .div-new-list li > a > img:hover {
+  -webkit-transform:scale(1.1);transform:scale(1.1);
+  transition: all .5s ease-in-out;
+  box-shadow: 0 0 2rem rgba(0,0,0,.1);
+   }
+
 div.figure-publicity {
-  border: 2px solid black;
   background-image: url(./assets/images/sphere-mj.png);
   background-size: cover;
   background-position: center;
@@ -508,7 +513,7 @@ button.figure {
   text-transform: uppercase;
   font-weight: 600;
   font-size: 15px;
-  transition: border-width 0.3s ease-in-out;
+  transition: all .5s ease-in-out;
   margin-bottom: 42%;
   border-radius: 4px;
   flex-wrap: wrap;
@@ -538,7 +543,6 @@ div.figure-publicity h2 {
 
 /* FOOTER */
 footer {
-  border: 1px solid #541554;
   color: var(--tertiary)
 }
 
@@ -551,6 +555,8 @@ div.footer-list {
   display: flex;
   flex-wrap: wrap;
   gap: 60px;
+  margin-bottom: 3%;
+  background-color: var(--tertiary);
 }
 
 div.footer-list ul h2 {
@@ -561,11 +567,13 @@ div.footer-list ul h2 {
 
 div.footer-list ul li{
   margin-top: 8%;
+
 }
 
 div.footer-list ul li a {
   color: rgb(84,81,84);
-  font-size: 14px; 
+  font-size: 14px;
+
 }
 
 div.footer-list ul li a:hover {
@@ -578,6 +586,7 @@ div.footer-list ul li a:hover {
   justify-content: space-between;
   color: var(--tertiary);
   background-color: var(--tertiary);
+  
 }
 
 .end-page-text,
@@ -597,7 +606,7 @@ div.footer-list ul li a:hover {
 
 .end-page-text li a {
   color: var(--quaternary);
-
+  
 }
 
 .end-page-images img {
@@ -615,6 +624,7 @@ div.footer-list ul li a:hover {
 .end-page-text li a:hover {
   color: rgb(18,99,163);
 
+
 }
 
 .end-page-images a {
@@ -626,7 +636,7 @@ div.footer-list ul li a:hover {
   font-size: 12px; 
   text-align: center;
   width: 100%;
-  margin-bottom: 20px;
+
 }
 
 .footer-end p a {
