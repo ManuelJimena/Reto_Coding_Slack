@@ -483,11 +483,11 @@ ul.div-new-list {
 
 .div-new-list li > a > img{
 height: 425px;
+transition: .5s ease-in-out;
  }
 
  .div-new-list li > a > img:hover {
-  -webkit-transform:scale(1.1);transform:scale(1.1);
-  transition: all .5s ease-in-out;
+  transform:scale(1.1);
   box-shadow: 0 0 2rem rgba(0,0,0,.1);
    }
 
@@ -502,7 +502,6 @@ div.figure-publicity {
   flex: 1;
   flex-wrap: wrap;
   gap: 5px;
-
 }
 
 button.figure {
@@ -543,7 +542,8 @@ div.figure-publicity h2 {
 
 /* FOOTER */
 footer {
-  color: var(--tertiary)
+  color: var(--tertiary);
+  background-color: var(--tertiary);
 }
 
 div.footer-list {
@@ -573,7 +573,6 @@ div.footer-list ul li{
 div.footer-list ul li a {
   color: rgb(84,81,84);
   font-size: 14px;
-
 }
 
 div.footer-list ul li a:hover {
@@ -586,15 +585,14 @@ div.footer-list ul li a:hover {
   justify-content: space-between;
   color: var(--tertiary);
   background-color: var(--tertiary);
-  
 }
 
 .end-page-text,
 .end-page-images {
   display: flex;
   flex-wrap: wrap;
-  list-style: none;
-
+  margin-right: 7%;
+  margin-left: 7%;
 }
 
 .end-page-text li,
@@ -606,29 +604,27 @@ div.footer-list ul li a:hover {
 
 .end-page-text li a {
   color: var(--quaternary);
-  
 }
 
 .end-page-images img {
   width: 20px;
   height: auto;
   color: rgb(18,99,163);
-
+  background: none;
 }
 
 .end-page-images li a img:hover {
-  color: rgb(18,99,163);
+  width: 40px;
+  background-color: rgb(18,99,163);
 
 }
 
 .end-page-text li a:hover {
   color: rgb(18,99,163);
-
-
 }
 
 .end-page-images a {
-  color: rgb(18,99,163)
+  color: rgb(18,99,163);
 }
 
 .footer-end p {
@@ -636,7 +632,6 @@ div.footer-list ul li a:hover {
   font-size: 12px; 
   text-align: center;
   width: 100%;
-
 }
 
 .footer-end p a {
@@ -644,7 +639,7 @@ div.footer-list ul li a:hover {
 }
 
 div.footer-list img {
-width: 4%;
+  width: 4%;
   display: flex;
   flex-wrap: wrap;
 }
